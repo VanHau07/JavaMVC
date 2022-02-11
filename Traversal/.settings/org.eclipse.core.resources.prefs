@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/main/java/Traversal/Controller/Admin/BlogAdminController.java=UTF-8
+encoding//src/main/java/Traversal/Controller/Admin/LoginController.java=UTF-8
+encoding//src/main/java/Traversal/Controller/Admin/OrderController.java=UTF-8
+encoding//src/main/java/Traversal/Controller/Admin/ProductAdminController.java=UTF-8
+encoding//src/main/java/Traversal/Controller/User/CartController.java=UTF-8
+encoding//src/main/java/Traversal/Controller/User/UserController.java=UTF-8
+encoding//src/main/java/Traversal/Dao/Admin/OrderDao_Admin.java=UTF-8
+encoding//src/main/java/Traversal/Dao/Admin/ProductDao_Admin.java=UTF-8
+encoding//src/main/java/Traversal/Dao/User/CartDao.java=UTF-8
+encoding//src/main/java/Traversal/Dao/User/ProductDao.java=UTF-8
+encoding//src/main/java/Traversal/Services/Admin/AccountAdminServiceImpl.java=UTF-8
+encoding//src/main/java/Traversal/Services/Admin/AdminImpl.java=UTF-8
+encoding//src/main/java/Traversal/Services/User/AccountServiceImpl.java=UTF-8
+encoding//src/main/webapp/WEB-INF/views/admin/Products.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/admin/login_admin.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/user/account/search.jsp=UTF-8

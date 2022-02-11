@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>traversal-config</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>traversal-config</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<!-- Ck finder -->
+<!-- 	<servlet>
+		<servlet-name>ConnectorServlet</servlet-name>
+		<servlet-class>com.ckfinder.connector.ConnectorServlet
+		</servlet-class>
+		<init-param>
+			<description>Path to configuration file can be relative path inside
+				application, absolute path on local file system or UNC path.
+			</description>
+			<param-name>XMLConfig</param-name>
+			<param-value>/WEB-INF/config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>false</param-value>
+
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>ConnectorServlet</servlet-name>
+		<url-pattern>resources/ckfinder/core/connector/java/connector.java</url-pattern>
+	</servlet-mapping> -->
+	<!-- Save Images -->
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.png</url-pattern>
+		<url-pattern>*.gif</url-pattern>
+		<url-pattern>*.jpg</url-pattern>
+		<url-pattern>*.jpeg</url-pattern>
+	</servlet-mapping>
+	<!-- Save Images -->
+	<!-- Fillter -->
+
+	<filter>
+		<filter-name>sitemesh</filter-name>
+		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter
+		</filter-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>WEB-INF/traversal-config-servlet.xml</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>sitemesh</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	<!-- filter UTF-8 unicode -->
+	<filter>
+		<filter-name>encoding-filter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter
+		</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encoding-filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- /filter UTF-8 unicode -->
+	<session-config>
+		<tracking-mode>COOKIE</tracking-mode>
+	</session-config>
+
+</web-app>

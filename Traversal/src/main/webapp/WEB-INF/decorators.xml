@@ -1,0 +1,19 @@
+<decorators defaultdir="/WEB-INF/views/layouts">
+	<decorator name="user" page="user.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	
+		<decorator name="chi-tiet-san-pham" page="chi_tiet.jsp">
+		<pattern>/chi-tiet-san-pham*</pattern>
+	</decorator>
+	<decorator name="admin" page="_admin.jsp">
+		<pattern>/admin*</pattern>
+	</decorator>
+	<decorator name="detail" page="_detail.jsp">
+		<pattern>/detail*</pattern>
+	</decorator>
+	
+		<decorator name="bai-viet" page="blog.jsp">
+		<pattern>/bai-viet*</pattern>
+	</decorator>
+</decorators>
